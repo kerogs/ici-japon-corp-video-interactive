@@ -9,7 +9,7 @@
 ## Original
 ![ori](./assets/ori.png)
 
-## Lien :![alt text](image.png)
+## Lien
 ### Kerogs
 - [Codepen](https://codepen.io/kerogs/pen/OJKgXmo)
 - [Github](https://github.com/kerogs/kerogs)
