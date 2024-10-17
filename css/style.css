@@ -1,0 +1,179 @@
+/* Ignorer tout ce qui suit */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eee;
+  color: #282828;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+}
+body::before {
+  --line: color-mix(in lch, canvasText 25%, transparent);
+  --size: 50px;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(90deg, var(--line) 1px, transparent 1px var(--size)) 0 -5vmin/var(--size) var(--size), linear-gradient(var(--line) 1px, transparent 1px var(--size)) 0 -5vmin/var(--size) var(--size);
+  mask: linear-gradient(-15deg, transparent 45%, #eee);
+  top: 0;
+  z-index: -1;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.ccenter {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  filter: drop-shadow(0 10px 10px hsla(0, 0%, 0%, 0.5));
+}
+.ccenter .ijc {
+  transition: 0.4s;
+}
+.ccenter .ijc:hover {
+  transform: scale(1.02);
+}
+
+/* Code here */
+.ijc {
+  display: flex;
+  gap: 80px;
+  width: 1320px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  height: 700px;
+}
+.ijc > div {
+  flex: 1;
+}
+.ijc__left p.subhead {
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: -webkit-box;
+  line-clamp: 1;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.ijc__left h3 {
+  font-family: "zurich", sans-serif;
+  font-size: 2.26em;
+  font-weight: 8000;
+  text-transform: uppercase;
+  font-style: italic;
+  display: -webkit-box;
+  line-clamp: 2;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 40px 0;
+}
+.ijc__right #videoArea {
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 660px;
+}
+.ijc__right #videoArea video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ijc__right #ask {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 230px;
+  overflow-y: auto;
+}
+.ijc__right #ask button {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 18px;
+  background-color: hsla(0, 0%, 0%, 0.45);
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.4s;
+}
+.ijc__right #ask button span.letter {
+  font-size: 14px;
+  background-color: #000;
+  border-radius: 100%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ijc__right #ask button:hover {
+  border: 2px solid #000;
+}
+.ijc__right #controls {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.ijc__right #controls button {
+  background-color: hsla(0, 0%, 0%, 0.45);
+  color: #fff;
+  fill: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  width: 50px;
+  padding: 5px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+.ijc__right #controls button svg {
+  width: 20px;
+  height: 20px;
+}
+.ijc__right #controls button:hover {
+  transform: scale(1.1);
+}
+.ijc__right #controls button.active {
+  background-color: #fff;
+  color: #000;
+  fill: #000;
+}
+.ijc__right #controls button#time {
+  font-size: 15px;
+  width: auto;
+  padding: 5px 10px;
+}/*# sourceMappingURL=style.css.map */
